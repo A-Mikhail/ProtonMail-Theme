@@ -1,0 +1,459 @@
+/* --------------------------------------------------------
+Style Sheet for ProtonMail
+
+Version: 0.8
+Last modified: 16.05.18
+Author: Mikhail Adamenko
+Email: mikhail.adamenko@pm.me
+Contribute: RodrigoMatos 
+----------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Roboto font as default */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-input-placeholder {
+  color: #333 !important;
+}
+
+:-ms-input-placeholder {
+  color: #333 !important;
+}
+
+::-ms-input-placeholder {
+  color: #333 !important;
+}
+
+::placeholder {
+  color: #333 !important;
+}
+
+
+/* Dashboard */
+
+.overviewSection-container,
+.overviewSection-tbody-billing,
+.settingsDashboard-subscription-section-table-container,
+.settingsDashboard-overview-section-table-container,
+.subscriptionSection-tbody-billing,
+.subscriptionSection-tbody-billing>tr {
+  background: #fff !important;
+  color: #000;
+}
+
+
+/* Hide plans detail */
+
+.freeColumn-container>div,
+.plusColumn-container>div,
+.professionalColumn-container>div,
+.visionaryColumn-container>div {
+  display: none !important;
+}
+
+
+/* Show details on header hover */
+
+.freeColumn-container>header:hover,
+.plusColumn-container>header:hover,
+.professionalColumn-container>header:hover,
+.visionaryColumn-container>header:hover {
+  background-color: #f1efef;
+}
+
+.freeColumn-container:active>div,
+.plusColumn-container:active>div,
+.professionalColumn-container:active>div,
+.visionaryColumn-container:active>div {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  overflow: hidden;
+}
+
+.freeColumn-container:hover>div,
+.plusColumn-container:hover>div,
+.professionalColumn-container:hover>div,
+.visionaryColumn-container:hover>div {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  overflow: hidden;
+}
+
+
+/* "Remove" arrow buttons */
+
+.arrowsToScroll-button {
+  display: none;
+}
+
+
+/* Change plans layout */
+
+.settingsDashboard-plans {
+  position: relative;
+  display: -ms-flexbox;
+  display: block;
+  float: left;
+  background: #fff;
+  background-image: none;
+  background-position: none;
+  background-size: none;
+  margin: 0;
+  width: 100%;
+}
+
+.settingsDashboard-plans [class*=Column-container] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: table-cell;
+  float: inherit;
+  position: relative;
+  width: 1em;
+}
+
+.giftCodeBtn-container {
+  /* devs forget this I guess */
+  text-align: left;
+}
+
+.settingsDashboard-plans .freeColumn-free,
+.settingsDashboard-plans .totalRows-container {
+  min-height: none;
+}
+
+
+/* Make alerts more visible */
+
+.alert,
+.alert.alert-warning {
+  background: #ffc400;
+  color: #484848;
+}
+
+
+/* Remove shadows from notifying messages */
+
+.proton-notification-template,
+.cg-notify-message,
+.notification-success,
+.cg-notify-message-center {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+
+/* Navbar */
+
+.search-form-fieldset {
+  color: #333 !important;
+  border: 1px solid #acb0bf;
+}
+
+.headerSecured-container {
+  background-color: #fff;
+  color: #333;
+}
+
+.navigation {
+  /* Remove space from the last button */
+  margin: 0;
+}
+
+.pm_dropdown.right {
+  right: 0.5em;
+}
+
+.navigation-icon .fa-angle-down,
+.navigation-icons .fa-angle-down,
+.pm_buttons .fa.fa-angle-down {
+  margin-left: 0.4em;
+}
+
+
+/* Messages */
+
+.conversation {
+  background: #f6f7f9 !important;
+  padding: 0.4em 0.4em 0.4em 0 !important;
+  border: none !important;
+}
+
+.conversation:hover {
+  background-color: #fff !important;
+  color: #000;
+}
+
+.conversation:active #conversation-view {
+  display: table;
+  border: 1px solid red;
+}
+
+.conversation.active {
+  background: #828895 !important;
+  color: #fff;
+  border-bottom-color: #828895 !important;
+}
+
+.fa.fa-star {
+  color: #ffa500 !important;
+}
+
+
+/* Labels */
+
+.pm_labels [class*=-label] {
+  background-color: currentColor;
+}
+
+.pm_labels [class*=-name] {
+  color: #fff;
+  font-variant: all-petite-caps;
+  font-size: 11pt;
+}
+
+.labelsElement-label {
+  border: none;
+}
+
+
+/* Tools-panel separated from the main header */
+
+.toolbarDesktop-container,
+.pm_toolbar,
+.pm_toolbar_withSelector {
+  border-top: 1px solid #acb0c0;
+}
+
+
+/* Fixed header in a message */
+
+.conversation-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+#conversation-view .message .frame {
+  padding: 0 1em;
+}
+
+
+/* Make buttons and inputs are round 
+* and without box-shadow
+*/
+
+.pm_button {
+  position: relative;
+  overflow: hidden;
+  border: 0 none;
+  color: #212121;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.pm_button:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: -webkit-radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-image: -o-radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  -webkit-transform: scale(10, 10);
+  -ms-transform: scale(10, 10);
+  transform: scale(10, 10);
+  opacity: 0;
+  -webkit-transition: opacity 1s, -webkit-transform .5s;
+  transition: opacity 1s, -webkit-transform .5s;
+  -o-transition: transform .5s, opacity 1s;
+  transition: transform .5s, opacity 1s;
+  transition: transform .5s, opacity 1s, -webkit-transform .5s;
+}
+
+.pm_button:active:after {
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  opacity: .2;
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+}
+
+.pm_button:hover,
+.pm_button:focus,
+.pm_button:active {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.pm_button.primary,
+.pm_button.success,
+.pm_button.error,
+.pm_button.round {
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pm_button.primary:hover,
+.pm_button.primary:focus,
+.pm_button.primary:active,
+.pm_button.success:hover,
+.pm_button.success:focus,
+.pm_button.success:active,
+.pm_button.error:hover,
+.pm_button.error:focus,
+.pm_button.error:active,
+.pm_button.round:hover,
+.pm_button.round:focus,
+.pm_button.round:active {
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pm_form input[type=email],
+.pm_form input[type=number],
+.pm_form input[type=password],
+.pm_form input[type=search],
+.pm_form input[type=tel],
+.pm_form input[type=text],
+.pm_form input[type=url],
+.pm_form select,
+.pm_form .pm_select {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #acb0bf;
+  border-radius: 2em;
+}
+
+.pm_form textarea {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.headerBlock-container {
+  border: none;
+}
+
+.headerBlock-container [class*=title] {
+  font-weight: bold;
+  color: #000;
+}
+
+.alert {
+  margin: 1em 0;
+}
+
+.navigation>li {
+  position: relative;
+  padding: 1em;
+}
+
+.pm_form .pm_select.inline select {
+  width: 100%;
+  position: relative;
+  margin: 0 1em 0 0;
+}
+
+.pm_select.inline select>option {
+  border: 1px solid red;
+}
+
+
+/* Make the right new left, 
+* move button of "Custom theme" to the left 
+*/
+
+.setting>form>.text-right {
+  text-align: left;
+}
+
+
+/* Sidebar */
+
+#ptSidebar,
+.headerSecuredDesktop-logo {
+  background: #686c8c;
+}
+
+.sidebarApp-container .sidebar-btn-back,
+.sidebarApp-container .sidebar-btn-compose {
+  margin: 0.5em 0;
+}
+
+.sidebar-btn-back {
+  border: none !important;
+}
+
+.sidebarApp-item,
+.sidebarApp-menu li {
+  position: relative;
+  width: 100%;
+  height: 3em;
+}
+
+
+/* Sidebar scrollbar */
+
+#ptSidebar::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+#ptSidebar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 2em;
+}
+
+#ptSidebar::-webkit-scrollbar-thumb {
+  background-color: #848995;
+  border-radius: 2em;
+}
+
+.sidebarApp-link>* {
+  white-space: normal;
+}
+
+
+/* Remove footer from the sidebar */
+
+.footer {
+  display: none !important;
+}
+
+
+/* The indicator of an active button 
+* like in the header buttons 
+*/
+
+.sidebarApp-item.active .navigationItem-item,
+.sidebarApp-item.active .sidebarApp-link {
+  border-left: 0.6em solid #9397ce;
+}
+
+
+/* Folders sidebar */
+
+.menuLabel-item {
+  height: 2em !important;
+}
+
+.menuLabel-item.active .menuLabel-link {
+  border-left: 0.2em solid #9397ce;
+}
