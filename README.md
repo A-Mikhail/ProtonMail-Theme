@@ -3,7 +3,7 @@ Custom theme for ProtonMail website made to fix some UI problems and add own
 
 ![Desgin on 16.05.18](https://i.imgur.com/cRbOWnV.png)
 
-[**Theme on Reddit**](ttps://www.reddit.com/r/ProtonMail/comments/8i5w30/custom_theme/)
+[**Theme on Reddit**](https://www.reddit.com/r/ProtonMail/comments/8i5w30/custom_theme/)
 
 # Previous Version
 
