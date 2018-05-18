@@ -1,20 +1,12 @@
 /* --------------------------------------------------------
 Style Sheet for ProtonMail
 
-Version: 0.8
-Last modified: 16.05.18
+Version: 0.9
+Last modified: 18.05.18
 Author: Mikhail Adamenko
 Email: mikhail.adamenko@pm.me
 Contribute: RodrigoMatos 
 ----------------------------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-/* Roboto font as default */
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
 
 ::-webkit-input-placeholder {
   color: #333 !important;
@@ -155,9 +147,20 @@ body {
   border: 1px solid #acb0bf;
 }
 
+.headerBlock-container {
+  border: none;
+}
+
+.headerBlock-container [class*=title] {
+  font-weight: bold;
+  color: #000;
+}
+
 .headerSecured-container {
   background-color: #fff;
   color: #333;
+  width: calc(100% - 190px);
+  display: inline-table;
 }
 
 .navigation {
@@ -252,7 +255,6 @@ body {
 .pm_button {
   position: relative;
   overflow: hidden;
-  border: 0 none;
   color: #212121;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -348,15 +350,6 @@ body {
   box-shadow: none;
 }
 
-.headerBlock-container {
-  border: none;
-}
-
-.headerBlock-container [class*=title] {
-  font-weight: bold;
-  color: #000;
-}
-
 .alert {
   margin: 1em 0;
 }
@@ -388,18 +381,27 @@ body {
 
 /* Sidebar */
 
-#ptSidebar,
-.headerSecuredDesktop-logo {
+#ptSidebar {
   background: #686c8c;
+  background-image: url(https://protonmail.com/images/main-banner.jpg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.headerSecuredDesktop-logo {
+  display: none;
 }
 
 .sidebarApp-container .sidebar-btn-back,
 .sidebarApp-container .sidebar-btn-compose {
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
-.sidebar-btn-back {
-  border: none !important;
+.sidebar-btn-compose::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f0e0  ";
 }
 
 .sidebarApp-item,
@@ -456,4 +458,26 @@ body {
 
 .menuLabel-item.active .menuLabel-link {
   border-left: 0.2em solid #9397ce;
+}
+
+
+/* @MEDIA STUFF */
+
+@media (max-width: 1100px) {
+  .headerSecured-container {
+    width: calc(100% - 170px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .headerSecured-container {
+    display: inline-block;
+    width: calc(100% - 150px);
+  }
+}
+
+@media (max-width: 900px) {
+  .headerSecured-container {
+    width: 100%;
+  }
 }
