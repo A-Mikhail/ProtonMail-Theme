@@ -7,6 +7,18 @@ Custom theme for ProtonMail website made to fix some UI problems and add own
 
 # Previous Version
 
+#### 5th Update
+
+* Dashboard `(!experimental)`
+* Messages
+* Buttons
+
+Dashboard page gets some experimental update - Plans takes much horizontal and vertical space, and because I can't entirely change the table I decide to hide it and reveal when the mouse cursor hovers plan's header. As for now it works incredibly bad and serves more like proof-of-work. You can look how it works [here](https://i.imgur.com/Jcu8hcn.gifv).
+
+`I want to listen from the users should I continue torture plans table or return to default state?`
+
+The message rows get some padding and cut on the borders. Buttons now have animations on click that I partially take from the [RodrigoMatos](https://www.reddit.com/user/RodrigoMatos) user, for now, not every button has the animations. 
+
 #### 4th Update
 
 * Fonts
