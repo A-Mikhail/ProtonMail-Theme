@@ -5,6 +5,17 @@ Custom theme for ProtonMail website made to fix some UI problems and add own
 
 [**Theme on Reddit**](https://www.reddit.com/r/ProtonMail/comments/8i5w30/custom_theme/)
 
+# Current Version
+
+**6th Update**
+
+* Sidebar
+* Messages
+* Navbar
+* Alerts
+
+The sidebar now with a cool image that I take from the background ProtonMail website. Logo with current plan label is removed, for now, the reason for this was that header for logo and sidebar locates in different DIV blocks so the image on the background duplicate, I will return logo but to where and how right now  I can't say.  Messages - even message has its background color. Alerts now have the left border (not every alert receive it yet).
+
 # Previous Version
 
 #### 5th Update
