@@ -1,8 +1,8 @@
 /* --------------------------------------------------------
 Style Sheet for ProtonMail
 
-Version: 0.9
-Last modified: 18.05.18
+Version: 0.10
+Last modified: 20.05.18
 Author: Mikhail Adamenko
 Email: mikhail.adamenko@pm.me
 Contribute: RodrigoMatos 
@@ -122,10 +122,14 @@ Contribute: RodrigoMatos
 
 /* Make alerts more visible */
 
-.alert,
-.alert.alert-warning {
-  background: #ffc400;
+.alert-warning {
+  background: #ffc400 !important;
   color: #484848;
+  border-left: 0.2em solid #e68f18;
+}
+
+.alert-info {
+  border-left: 0.2em solid #a4a8e6;
 }
 
 
@@ -137,6 +141,7 @@ Contribute: RodrigoMatos
 .cg-notify-message-center {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+  border-left: 0.2em solid #749663 !important;
 }
 
 
@@ -182,13 +187,17 @@ Contribute: RodrigoMatos
 /* Messages */
 
 .conversation {
-  background: #f6f7f9 !important;
+  background: #fff !important;
   padding: 0.4em 0.4em 0.4em 0 !important;
   border: none !important;
 }
 
+.conversation:nth-child(even) {
+  background: #f5f7ff !important;
+}
+
 .conversation:hover {
-  background-color: #fff !important;
+  background-color: #f2f2f2 !important;
   color: #000;
 }
 
@@ -198,9 +207,7 @@ Contribute: RodrigoMatos
 }
 
 .conversation.active {
-  background: #828895 !important;
-  color: #fff;
-  border-bottom-color: #828895 !important;
+  background: #5971b2 !important;
 }
 
 .fa.fa-star {
@@ -424,12 +431,19 @@ Contribute: RodrigoMatos
 }
 
 #ptSidebar::-webkit-scrollbar-thumb {
-  background-color: #848995;
+  background-color: #b4bedb;
   border-radius: 2em;
 }
 
 .sidebarApp-link>* {
   white-space: normal;
+}
+
+
+/* Folder scrollbar */
+
+div.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #b4bedb;
 }
 
 
