@@ -11,6 +11,9 @@ Custom theme for ProtonMail website made to fix some UI problems and add own
 
 All changes that fall into this update I will write later in one big post somewhere on the Internet. Thank you all for the feedback and help.
 
+# How to use?
+Copy-and-paste code from [style.css](https://raw.githubusercontent.com/A-Mikhail/redesigned-protonmail/master/style.css) if you want to make changes in the theme, or [style.css.min](https://raw.githubusercontent.com/A-Mikhail/redesigned-protonmail/master/style.css.min) inside the text area "Custom theme" in the [Appearance](https://mail.protonmail.com/appearance) tab.
+
 # Previous Version
 
 #### 6th Update
