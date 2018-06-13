@@ -9,7 +9,6 @@ Contribute: RodrigoMatos
 ----------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:900&subset=cyrillic,cyrillic-ext,latin-ext');
-
 * {
   -webkit-transition: none !important;
   -o-transition: none !important;
@@ -29,60 +28,71 @@ Contribute: RodrigoMatos
 }
 
 ::-webkit-input-placeholder {
-    color: var(--text-dark-color) !important;
-}
-  
-::-ms-input-placeholder {
-    color: var(--text-dark-color) !important;
-}
-  
-::-ms-input-placeholder {
-    color: var(--text-dark-color) !important;
-}
-  
-:-ms-input-placeholder {
-    color: var(--text-dark-color) !important;
-}
-  
-::placeholder {
-    color: var(--text-dark-color) !important;
+  color: var(--text-dark-color) !important;
 }
 
+::-ms-input-placeholder {
+  color: var(--text-dark-color) !important;
+}
+
+::-ms-input-placeholder {
+  color: var(--text-dark-color) !important;
+}
+
+:-ms-input-placeholder {
+  color: var(--text-dark-color) !important;
+}
+
+::placeholder {
+  color: var(--text-dark-color) !important;
+}
+
+
 /* Body Text */
-html, body {
+
+html,
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
   color: var(--text-dark-color) !important;
   border-color: var(--border-color) !important;
   background-color: var(--background-bright-color);
 }
 
+
 /* Headers and sub-headers */
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-size: 1.416em !important;
   font-family: "Roboto", sans-serif;
 }
 
+
 /* General style setttings */
+
 html.protonmail .text-right {
   /* Make right important */
   text-align: right !important;
 }
 
 .pm_modal .modal-dialog {
-    border: 5px solid var(--main-elements-color);
-    border-radius: 0.2em;
+  border: 5px solid var(--main-elements-color);
+  border-radius: 0.2em;
 }
 
 .pm_modal .modal-dialog .close {
-    background-color: var(--main-elements-color);
-    border-radius: 0.2em;
+  background-color: var(--main-elements-color);
+  border-radius: 0.2em;
 }
 
 #pm_main {
-    color: var(--text-dark-color) !important; 
+  color: var(--text-dark-color) !important;
 }
 
+
 /* WYSIWYG */
+
 [class*=squireToolbar-row] {
   background-color: var(--background-bright-color) !important;
   color: var(--text-dark-color);
@@ -90,44 +100,48 @@ html.protonmail .text-right {
 
 [class*=squireToolbar-row] [class*=squireToolbar-action-]:hover:not(:active) {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .squireToolbar-triangle-with-shadow:after {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   background-color: var(--hover-color);
 }
+
+
 /* END WYSIWYG */
 
 #pm_settings .settings .squireToolbar-container,
 #pm_settings .settings .angular-squire-wrapper {
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--border-color) !important;
-    border-radius: 0.2em;
-    color: var(--text-dark-color);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--border-color) !important;
+  border-radius: 0.2em;
+  color: var(--text-dark-color);
 }
 
+
 /* MODAL */
-.pm_modal .modal-dialog .modal-content h1, 
-.pm_modal .modal-dialog .modal-content h2, 
-.pm_modal .modal-dialog .modal-content h3, 
+
+.pm_modal .modal-dialog .modal-content h1,
+.pm_modal .modal-dialog .modal-content h2,
+.pm_modal .modal-dialog .modal-content h3,
 .pm_modal .modal-dialog .modal-content h4 {
   font-family: "Roboto", sans-serif !important;
 }
 
 .pm_modal .modal-dialog .modal-content .modal-body {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .pm_toggle {
- border: none;
- -webkit-box-shadow: none;
-         box-shadow: none;
- background-color: var(--background-bright-color);
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: var(--background-bright-color);
 }
 
 .pm_toggle span.knob {
@@ -147,7 +161,8 @@ html.protonmail .text-right {
   text-align: left !important;
 }
 
-.pm_table table td, .pm_table table th {
+.pm_table table td,
+.pm_table table th {
   padding: 0 1.6em;
 }
 
@@ -173,13 +188,13 @@ html.protonmail .text-right {
   text-transform: none;
 }
 
-.pm_buttons > * {
- border-left: 1px solid var(--border-color);
+.pm_buttons>* {
+  border-left: 1px solid var(--border-color);
 }
 
 .pm_buttons a {
- -webkit-box-shadow: none !important;
-         box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .pm_buttons .pm_buttons-child:focus,
@@ -190,16 +205,16 @@ html.protonmail .text-right {
 
 .pm_button.primary,
 .pm_badge.primary,
-.pm_toggle.on .on, 
+.pm_toggle.on .on,
 .pm_toggle.off .off {
-    background-color: var(--main-elements-color) !important;
-    color: var(--text-bright-color) !important;
-    border: none !important;
+  background-color: var(--main-elements-color) !important;
+  color: var(--text-bright-color) !important;
+  border: none !important;
 }
 
 .pm_toggle.on .off {
-    color: var(--text-dark-color);
-    opacity: 1;
+  color: var(--text-dark-color);
+  opacity: 1;
 }
 
 html.protonmail .text-purple,
@@ -209,9 +224,8 @@ html.protonmail .text-purple,
 .customRadio-mask.customMaskInput-mask,
 .settingsDashboard-plans [class*=Column-container] .fa-info-circle,
 .overviewSection-container .topUp-button,
-.giftCodeBtn-container
-{
-    color: var(--main-elements-color) !important;
+.giftCodeBtn-container {
+  color: var(--main-elements-color) !important;
 }
 
 html.protonmail .text-red {
@@ -248,8 +262,7 @@ html.protonmail .text-red {
   background-color: var(--success-color);
 }
 
-.customCheckbox-input:checked+.customCheckbox-mask
-{
+.customCheckbox-input:checked+.customCheckbox-mask {
   color: var(--text-bright-color) !important;
   background-color: var(--main-elements-color);
   border: none;
@@ -257,38 +270,39 @@ html.protonmail .text-red {
 
 .customRadio-input:checked+.customRadio-mask {
   -webkit-box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px var(--main-elements-color);
-          box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px var(--main-elements-color);
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px var(--main-elements-color);
   border-color: var(--main-elements-color);
 }
 
+
 /* Dashboard */
+
 .settingsDashboard-plans [class*=Column-container],
 .settingsDashboard-overview-section-table-container,
 .settingsDashboard-subscription-section-table-container {
-    border: 1px solid var(--border-color);
-    border-radius: 0.2em;
+  border: 1px solid var(--border-color);
+  border-radius: 0.2em;
 }
 
 .settingsDashboard-plans [class*=Column-container]>:not(:last-child) {
-    border-color: var(--border-color);
+  border-color: var(--border-color);
 }
 
 .settingsDashboard-plans [class*=Column-container] .isCurrent,
-.settingsDashboard-plans.free-active .freeColumn-container, 
-.settingsDashboard-plans.plus-active .plusColumn-container, 
-.settingsDashboard-plans.professional-active .professionalColumn-container, 
-.settingsDashboard-plans.visionary-active .visionaryColumn-container
-{
-    border-color: var(--main-elements-color);
-    -webkit-box-shadow: 0 0 8px var(--main-elements-color), 0 0 0 2px var(--main-elements-color);
-    box-shadow: 0 0 8px var(--main-elements-color), 0 0 0 2px var(--main-elements-color);
-    border-radius: 0 0 2px 2px;
+.settingsDashboard-plans.free-active .freeColumn-container,
+.settingsDashboard-plans.plus-active .plusColumn-container,
+.settingsDashboard-plans.professional-active .professionalColumn-container,
+.settingsDashboard-plans.visionary-active .visionaryColumn-container {
+  border-color: var(--main-elements-color);
+  -webkit-box-shadow: 0 0 8px var(--main-elements-color), 0 0 0 2px var(--main-elements-color);
+  box-shadow: 0 0 8px var(--main-elements-color), 0 0 0 2px var(--main-elements-color);
+  border-radius: 0 0 2px 2px;
 }
 
 .settingsDashboard-plans [class*=Column-container] .isCurrent {
-    background: var(--main-elements-color);
+  background: var(--main-elements-color);
 }
-    
+
 .overviewSection-container,
 .overviewSection-tbody-billing,
 .settingsDashboard-subscription-section-table-container,
@@ -307,14 +321,18 @@ html.protonmail .text-red {
   min-height: none;
 }
 
+
 /* Account */
+
 .pm_sort-container,
 .pm_sort-item-content {
   border-color: var(--border-color);
   border-radius: 0.2em;
 }
 
+
 /* VPN */
+
 .vpn-container {
   padding: 0;
 }
@@ -325,49 +343,67 @@ section.vpn-ressourcesSection-container {
 
 .vpn-container .vpn-ressourcesSection-clients-list {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .vpn-container .vpn-ressourcesSection-clients-item-container:not(.disabled):hover {
   border: 1px solid var(--border-color);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
+
+
 /* END VPN */
 
+
 /* Labels */
+
 .settingsLabels-container .help-dnd {
   text-align: left;
 }
+
+
 /* End Labels */
 
+
 /* Filters */
+
 .settingsFilters-actions-buttons::after {
   content: "";
 }
 
-.headerBlock-container > button {
+.headerBlock-container>button {
   font-size: small;
 }
+
+
 /* End Filters */
 
+
 /* Contacts */
+
 .contactMergerList-group,
 .contactMergerList-item,
 .contactMergerList-item .contactMergerList-priority {
   border-color: var(--border-color) !important;
 }
 
-.contactMergerList-table .delete, .contactMergerList-table .details, .contactMergerList-table .undelete {
+.contactMergerList-table .delete,
+.contactMergerList-table .details,
+.contactMergerList-table .undelete {
   color: var(--main-elements-color);
 }
 
 .contactList-item-activeCursorContact .customCheckbox-container {
   border-color: var(--hover-color);
 }
+
+
 /* End Contacts */
 
+
 /* ALERT, NOTIFICATION CHANGES */
+
 .alert {
   background-color: var(--warning-color);
   color: var(--text-dark-color) !important;
@@ -406,48 +442,51 @@ body .cg-notify-message {
   background-color: var(--success-color) !important;
 }
 
+
 /* Navbar */
-.navigation > li {
-    position: relative;
-    padding: 0 1em;
+
+.navigation>li {
+  position: relative;
+  padding: 0 1em;
 }
-  
-.navigation>li.active, .navigation>li:hover {
+
+.navigation>li.active,
+.navigation>li:hover {
   border-color: var(--hover-color);
 }
 
 .search-form-fieldset {
-    border: 1px solid var(--border-color);
-    border-radius: 0.2em;
+  border: 1px solid var(--border-color);
+  border-radius: 0.2em;
 }
 
-.searchForm-action-button-advanced, 
-.searchForm-action-button-clear, 
+.searchForm-action-button-advanced,
+.searchForm-action-button-clear,
 .searchForm-action-button-toggle,
 .searchForm-container-adv .search-form-fieldset .searchForm-action-button-advanced,
 .searchForm-container-adv .search-form-fieldset {
-    border-radius: 0;
+  border-radius: 0;
 }
 
-.searchForm-action-button-advanced:hover, 
-.searchForm-action-button-clear:hover, 
+.searchForm-action-button-advanced:hover,
+.searchForm-action-button-clear:hover,
 .searchForm-action-button-toggle:hover {
-    background: var(--hover-color);
-    color: var(--text-bright-color);
-    border-radius: 0;
+  background: var(--hover-color);
+  color: var(--text-bright-color);
+  border-radius: 0;
 }
 
 .searchForm-advanced-wrapper {
-    background: var(--background-bright-color);
-    padding: 1em;
-    border-radius: 0;
+  background: var(--background-bright-color);
+  padding: 1em;
+  border-radius: 0;
 }
 
 .searchForm-advanced-container {
-    border-radius: 0;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: 1px solid var(--border-color);
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid var(--border-color);
 }
 
 .headerBlock-container {
@@ -464,8 +503,8 @@ body .cg-notify-message {
   color: var(--text-dark-color);
   width: calc(100% - 190px);
   float: right;
-  -webkit-box-shadow: 0 4px 4px -4px rgba(0,0,0,.1);
-          box-shadow: 0 4px 4px -4px rgba(0,0,0,.1);
+  -webkit-box-shadow: 0 4px 4px -4px rgba(0, 0, 0, .1);
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, .1);
 }
 
 .navigation {
@@ -478,22 +517,24 @@ body .cg-notify-message {
 }
 
 .pm_dropdown {
- -webkit-box-shadow: none;
-         box-shadow: none;
- border: 1px solid var(--border-color);
- border-radius: 0.2em;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+  border-radius: 0.2em;
 }
 
-.pm_dropdown>a, .pm_dropdown>button, .pm_dropdown>ul>li {
+.pm_dropdown>a,
+.pm_dropdown>button,
+.pm_dropdown>ul>li {
   border: none;
   color: var(--text-dark-color);
 }
 
 .dropdown-folder-scrollbox-group-item:hover,
 .scrollbox-container-group-item:hover,
-.pm_dropdown>a:hover, 
-.pm_dropdown>button:hover, 
-.pm_dropdown>ul>li:hover  {
+.pm_dropdown>a:hover,
+.pm_dropdown>button:hover,
+.pm_dropdown>ul>li:hover {
   font-weight: bold;
 }
 
@@ -516,7 +557,7 @@ body .cg-notify-message {
 
 .pm_toolbar {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
@@ -525,21 +566,28 @@ body .cg-notify-message {
   margin-left: 0.3em;
 }
 
+
 /* Messages */
+
 .subject-text {
   font-size: small;
 }
 
-.size, .time {
+.size,
+.time {
   font-size: smaller !important;
 }
 
+
 /* A Read Message */
+
 .conversation.hasLabels.read {
   font-weight: normal;
 }
 
+
 /* A New Message*/
+
 .conversation.hasLabels {
   font-weight: bold;
 }
@@ -555,8 +603,8 @@ body .cg-notify-message {
 }
 
 .conversation h4 {
- font-weight: inherit !important;
- font-family: inherit;
+  font-weight: inherit !important;
+  font-family: inherit;
 }
 
 .conversation.active {
@@ -586,8 +634,12 @@ body .cg-notify-message {
   border: none;
 }
 
+
 /* Inside Message */
+
+
 /* Fixed header in a message */
+
 body #pm_thread {
   overflow: initial;
 }
@@ -618,37 +670,40 @@ body #pm_thread {
 
 #conversation-view .message.open {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 #conversation-view .message .details {
   border-bottom: 1px solid var(--border-color);
-  background: var(--background-bright-color); 
+  background: var(--background-bright-color);
 }
 
 #conversation-view .message .summary,
-#conversation-view .message .summary .labels, 
-#conversation-view .message .summary .status, 
+#conversation-view .message .summary .labels,
+#conversation-view .message .summary .status,
 #conversation-view .message .summary .time {
-  background: var(--background-bright-color); 
+  background: var(--background-bright-color);
 }
 
 #conversation-view .message .summary .time:after {
- display: none;
+  display: none;
 }
+
 
 /* End Inside Message */
 
+
 /* Compose Message */
+
 #pm_composer .composer {
   border: 1px solid var(--border-color);
   border-radius: 0.2em;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .composerHeader-container {
-  background-color:  var(--background-bright-color);
+  background-color: var(--background-bright-color);
   color: var(--text-dark-color);
 }
 
@@ -658,29 +713,30 @@ body #pm_thread {
 
 #pm_composer .composer footer .pm_button {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
+
 
 /* Make buttons and inputs are round 
 * and without box-shadow
 */
 
-.appConfigBody-rows .chooseLayoutBtns-btn-rows, 
+.appConfigBody-rows .chooseLayoutBtns-btn-rows,
 body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
   background-color: var(--background-bright-color);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .pm_buttons {
- border-color: var(--border-color);
- border-radius: 0.2em;
- color: var(--text-dark-color);
+  border-color: var(--border-color);
+  border-radius: 0.2em;
+  color: var(--text-dark-color);
 }
 
 .pm_buttons .pm_buttons-child {
- -webkit-box-shadow: none;
-         box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .pm_button {
@@ -690,11 +746,11 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
   border-radius: 0.2em;
   border-color: var(--border-color);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-transform: none;
   font-size: 1em;
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   -webkit-transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
   -o-transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 300ms cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -742,23 +798,22 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
   color: var(--text-bright-color);
 }
 
-.pm_button.active, 
+.pm_button.active,
 .currencySelector-container .currencySelector-button.active {
-    background-color: var(--hover-color) !important;
-    color: var(--text-bright-color);
-    -webkit-box-shadow: none;
-            box-shadow: none;
+  background-color: var(--hover-color) !important;
+  color: var(--text-bright-color);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .pm_button.error,
-.pm_button.error:focus, 
+.pm_button.error:focus,
 .pm_button.error:hover {
- background-color: var(--danger-color) !important;
- border-color: var(--danger-color);
+  background-color: var(--danger-color) !important;
+  border-color: var(--danger-color);
 }
 
-.pm_button.success
-.pm_button.success:focus,
+.pm_button.success .pm_button.success:focus,
 .pm_button.success:hover {
   background-color: var(--success-color) !important;
   border-color: var(--success-color);
@@ -769,7 +824,7 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
 .pm_button.error,
 .pm_button.round {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .pm_button.primary:hover,
@@ -785,11 +840,11 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
 .pm_button.round:focus,
 .pm_button.round:active {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-.pm_button.link:active, 
-.pm_button.link:focus, 
+.pm_button.link:active,
+.pm_button.link:focus,
 .pm_button.link:hover {
   color: var(--text-bright-color) !important;
 }
@@ -809,26 +864,26 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
   border-radius: 0.2em !important;
 }
 
-.pm_form input[type=email].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=email].ng-invalid.ng-dirty, 
-.pm_form input[type=number].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=number].ng-invalid.ng-dirty, 
-.pm_form input[type=password].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=password].ng-invalid.ng-dirty, 
-.pm_form input[type=search].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=search].ng-invalid.ng-dirty, 
-.pm_form input[type=tel].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=tel].ng-invalid.ng-dirty, 
-.pm_form input[type=text].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=text].ng-invalid.ng-dirty, 
-.pm_form input[type=url].ng-invalid.always-show-ng-invalid, 
-.pm_form input[type=url].ng-invalid.ng-dirty, 
-.pm_form select.ng-invalid.always-show-ng-invalid, 
-.pm_form select.ng-invalid.ng-dirty, 
-.pm_form select.ng-invalid.always-show-ng-invalid:focus, 
-.pm_form select.ng-invalid.ng-touched, 
+.pm_form input[type=email].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=email].ng-invalid.ng-dirty,
+.pm_form input[type=number].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=number].ng-invalid.ng-dirty,
+.pm_form input[type=password].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=password].ng-invalid.ng-dirty,
+.pm_form input[type=search].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=search].ng-invalid.ng-dirty,
+.pm_form input[type=tel].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=tel].ng-invalid.ng-dirty,
+.pm_form input[type=text].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=text].ng-invalid.ng-dirty,
+.pm_form input[type=url].ng-invalid.always-show-ng-invalid,
+.pm_form input[type=url].ng-invalid.ng-dirty,
+.pm_form select.ng-invalid.always-show-ng-invalid,
+.pm_form select.ng-invalid.ng-dirty,
+.pm_form select.ng-invalid.always-show-ng-invalid:focus,
+.pm_form select.ng-invalid.ng-touched,
 .pm_form select.ng-invalid.ng-touched:focus,
-.pm_form textarea.ng-invalid.always-show-ng-invalid, 
+.pm_form textarea.ng-invalid.always-show-ng-invalid,
 .pm_form textarea.ng-invalid.ng-dirty {
   border-color: var(--danger-color);
 }
@@ -848,7 +903,8 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
 /* Make the right new left, 
 * move button of "Custom theme" to the left 
 */
-.setting > form > .text-right {
+
+.setting>form>.text-right {
   text-align: left !important;
 }
 
@@ -860,16 +916,21 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
   background-image: -webkit-linear-gradient(top, #8b89cc, #8487ca, #7c84c7, #7582c5, #6d80c2) !important;
   background-image: -o-linear-gradient(top, #8b89cc, #8487ca, #7c84c7, #7582c5, #6d80c2) !important;
   background-image: linear-gradient(to bottom, #8b89cc, #8487ca, #7c84c7, #7582c5, #6d80c2) !important;
-   height: 100% !important;
+  height: 100% !important;
 }
 
+
 /* Logo of PM */
+
 .headerSecuredDesktop-logo {
   display: none;
 }
 
+
 /* Back & Compose Buttons */
-.sidebar-btn-back, .sidebar-btn-compose {
+
+.sidebar-btn-back,
+.sidebar-btn-compose {
   font-size: 1em !important;
   font-family: "Roboto", sans-serif;
   margin: 10px 0 !important;
@@ -884,12 +945,12 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
   border: none;
 }
 
-.sidebarApp-item > *,
+.sidebarApp-item>*,
 .sidebarApp-icon,
 .sidebarApp-menu .menuLabel-link,
-.sidebarApp-item .navigationItem-counter, 
+.sidebarApp-item .navigationItem-counter,
 .sidebarApp-menu .menuLabel-counter {
-    color: var(--text-bright-color) !important;
+  color: var(--text-bright-color) !important;
 }
 
 .sidebarApp-item,
@@ -908,6 +969,7 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
 .sidebarApp-menu .ico-protonvpn {
   opacity: 1;
 }
+
 
 /* Sidebar scrollbar */
 
@@ -932,7 +994,9 @@ body:not(.appConfigBody-rows) .chooseLayoutBtns-btn-column {
 
 /* Folder */
 
+
 /* Scrollbar */
+
 div.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background: #b4bedb;
 }
@@ -958,24 +1022,30 @@ div.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
 
 .sidebarApp-item.active .navigationItem-item,
 .sidebarApp-item.active .sidebarApp-link {
-  background: rgba(2555,255,255, 0.2);
+  background: rgba(2555, 255, 255, 0.2);
 }
 
 .sidebarApp-item .navigationItem-btn-refresh {
   color: var(--text-bright-color);
 }
 
+
 /* Folders sidebar */
+
 .menuLabel-item {
   height: 2em !important;
 }
 
 .menuLabel-item.active .menuLabel-link {
-  background: rgba(2555,255,255, 0.2);
+  background: rgba(2555, 255, 255, 0.2);
 }
 
+
 /* Mobile */
+
+
 /* Mobile Account */
+
 .appConfigBody-is-mobile #ptSidebar {
   display: table;
 }
@@ -988,12 +1058,16 @@ div.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   width: 100%;
 }
 
+
 /* Mobile Header */
+
 .headerSecuredMobile-compose {
   color: var(--text-dark-color);
 }
 
+
 /* Mobile Inside Messages */
+
 body.appConfigBody-is-mobile #conversation-view .message .summary .time {
   background-color: var(--background-bright-color);
 }
@@ -1002,13 +1076,13 @@ body.appConfigBody-is-mobile #conversation-view .message.details .summary .meta 
   left: 0;
 }
 
+
 /* @MEDIA */
 
 @media (max-width: 1100px) {
   .headerSecured-container {
     width: calc(100% - 170px);
   }
-
   .navigation-link {
     width: auto;
   }
