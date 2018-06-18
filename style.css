@@ -1,15 +1,14 @@
 /* --------------------------------------------------------
 Style Sheet for ProtonMail
 
-Version: 1.0.1
-Last modified: 14.06.18
+Version: 1.1.0
+Last modified: 18.06.18
 Author: Mikhail Adamenko
 Email: mikhail.adamenko@pm.me
 Contribute: RodrigoMatos 
 ----------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:900&subset=cyrillic,cyrillic-ext,latin-ext');
-
 * {
   -webkit-transition: none !important;
   -o-transition: none !important;
@@ -642,6 +641,13 @@ body .cg-notify-message {
 
 body #pm_thread {
   overflow: initial;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: column-reverse;
+  flex-flow: column-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .conversation-container {
