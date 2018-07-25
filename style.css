@@ -1,8 +1,8 @@
 /* --------------------------------------------------------
 Style Sheet for ProtonMail
 
-Version: 1.1.0
-Last modified: 18.06.18
+Version: 1.1.1
+Last modified: 25.07.18
 Author: Mikhail Adamenko
 Email: mikhail.adamenko@pm.me
 Contribute: RodrigoMatos 
@@ -650,6 +650,16 @@ body #pm_thread {
   display: flex;
 }
 
+.messageExtra-container>[class*=-container] {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.summary-right {
+  background: none !important;
+}
+
 .conversation-container {
   display: block;
   width: 100%;
@@ -1052,11 +1062,6 @@ div.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   border-right: 1px solid var(--border-color);
 }
 
-.appConfigBody-is-mobile .messageExtra-container>[class*=-container]>[class*=-button] {
-  width: 100%;
-}
-
-
 /* Mobile Header */
 
 .headerSecuredMobile-compose {
@@ -1076,6 +1081,12 @@ body.appConfigBody-is-mobile #conversation-view .message.details .summary .meta 
 
 
 /* @MEDIA */
+
+@media (max-width: 1350px) {
+  #conversation-view .message .summary .summary-right {
+    background: none;
+  }
+}
 
 @media (max-width: 1100px) {
   .headerSecured-container {
