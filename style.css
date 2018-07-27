@@ -697,6 +697,9 @@ body #pm_thread {
   display: none;
 }
 
+#conversation-view .message .summary .location.folders {
+  background: var(--background-bright-color);
+}
 
 /* End Inside Message */
 
